@@ -38,13 +38,21 @@ class FilmBox extends Component {
 
     render(){
         return (
+            <React.Fragment>
             <div className="film-box">
                 <h2>Upcoming Releases for the UK</h2>
                 <FilmList data={this.state.data}/>
             </div>
 
+            <hr></hr>
+            <div className="upcoming-box">
+                <a href="https://www.imdb.com/calendar/?region=gb">View More Upcoming Releases</a>
+            </div>
+
+            </React.Fragment>
 
         )
+
     }
 
 }
